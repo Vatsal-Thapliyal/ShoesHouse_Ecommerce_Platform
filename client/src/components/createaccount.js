@@ -3,7 +3,6 @@ import './style.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { useselector, useDispatch } from 'react-redux';
 
 const Createaccount = () => {
   

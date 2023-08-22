@@ -6,7 +6,6 @@ import { loginSuccess } from '../redux/userRedux';
 
 const Navbar = () => {
    const totalProducts = useSelector(state => state.cart.totalProducts);
-   const Cart = useSelector(state=> state.cart);
    const dispatch = useDispatch();
    const user = useSelector(state=>state.user.currentuser);
   

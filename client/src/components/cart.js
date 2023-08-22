@@ -4,17 +4,13 @@ import { useSelector, useDispatch } from 'react-redux';
 import { updateProductQuantity, removeProduct } from '../redux/cartRedux';
 import StripeCheckout from 'react-stripe-checkout';
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'; 
 
 
 const Cart = () => {
    
-  const initialQuantity = 1;
   const cart = useSelector(state => state.cart);
 
-  const [quantity,setQuantity] = useState(initialQuantity);
   const [stripeToken, setStripeToken] = useState(null);
- const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleQuantity = (update, productId, productSize) => {
@@ -41,7 +37,7 @@ const onToken = async (token) => {
 useEffect(()=>{
   const makeRequest = async() => {
     try{
-        const res = await axios.post('http://localhost:5000/api/checkout/payment',{
+          await axios.post('http://localhost:5000/api/checkout/payment',{
           tokenId: stripeToken.id,
           amount: cart.totalPrice * 100,
         });

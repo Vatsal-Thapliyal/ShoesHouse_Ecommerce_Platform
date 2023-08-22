@@ -57,7 +57,7 @@ const Signin = () => {
         };
       }
     fetchUserCart();
-  },[user]);
+  },[user, userId, accessToken]);
 
   return (
     <>
