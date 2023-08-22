@@ -1,0 +1,53 @@
+.nav-item-container{
+    background-color: #0E67B4;
+    width: 100%;
+}
+.gray-button{
+    background-color: #505050;
+}
+
+.gray-button:hover{
+    background-color: #303030;
+}
+
+.product-image{
+    width: 400px;
+}
+
+.grid-container{
+display : grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+justify-content: center;
+align-items: center;
+}
+
+.light-blue{
+    background-color: #D4F1F4;
+}
+
+.slider-image{
+    height:100%;
+    width: 100%;
+}
+
+.slider-div{
+    height: auto;
+    width: auto;
+}
+
+.size-select{
+    background-color: #505050;
+}
+
+.size-select:hover{
+    background-color: #303030;
+}
+.empty-cart{
+    font-size : 27px;
+}
+
+
+/* Add a media query to handle smaller screens */
+
+  
+
