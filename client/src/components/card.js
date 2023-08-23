@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 const Card = ({ item }) => {
   const id = item._id.toString();
-  const productCat = item.category;
   return (
     <>
          <Link to={`/each-product/${id}`}><div className="each-card overflow-hidden bg-white hover:bg-slate-300 hover:cursor-pointer w-60 my-4 mx-10 shadow-xl grid  grid-container h-80" >
